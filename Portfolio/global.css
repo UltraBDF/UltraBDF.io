@@ -1,0 +1,152 @@
+/* -------------------- Global -------------------- */
+html {
+    background: #161616;
+    color: white;
+    font-family: 'Tilt Neon';
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img {
+    pointer-events: none;
+}
+
+/* -------------------- Body -------------------- */
+body {
+    height: 100vh;
+    margin: 0px;
+}
+
+/* -------------------- Header -------------------- */
+header {
+    background-image: url(assets/Img/Banniere_perfect.webp);
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    display: flex;
+}
+
+/* ----- Menu_accueil ----- */
+.menu_accueil ul {
+    position: relative;
+    gap: 30px;
+    width: 100em;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+
+.menu_accueil ul li {
+    position: relative;
+    list-style: none;
+}
+
+.menu_accueil ul li a {
+    position: relative;
+    text-decoration: none;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: transparent;
+    text-indent: -8px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.menu_accueil ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 5px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+.menu_accueil ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.column-elements {
+    flex-direction: column;
+}
+
+/* ----- Language_buttons ----- */
+main .language_buttons {
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    width: 10%;
+    height: 10%;
+    margin-top: 1%;
+    margin-left: -15%;
+    border: solid 2px pink;
+    border-radius: 10px;
+}
+
+main .language_buttons p>a:visited {
+    color: black;
+}
+
+main .language_buttons:hover{
+    background-color: lightpink;
+}
+
+.language_buttons p>a:visited {
+    color: white;
+}
+
+/* ----- Reseaux ----- */
+.reseaux {
+    font-size: 3em;
+    height: 20%;
+}
+
+.reseaux a {
+    color: white;
+}
+
+/* -------------------- Font -------------------- */
+@font-face {
+    font-family: 'Tilt Neon';
+    src: url("assets/fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf") format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 800px){
+
+    .menu_accueil ul{
+        display : block;
+    }
+
+    .language_buttons {
+        position: absolute;
+    }
+
+    .reseaux {
+        margin-left: 40%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    
+    div {
+        flex-basis: 100%;
+    }
+}
+
+*{
+    max-width: 100%;
+}
