@@ -24,6 +24,7 @@ header {
     background-repeat: no-repeat;
     background-position: 50% 80%;
     display: flex;
+    background-size: 100%;
 }
 
 /* ----- Menu_accueil ----- */
@@ -48,7 +49,7 @@ header {
     line-height: 2em;
     letter-spacing: 1px;
     color: transparent;
-    text-indent: -8px;
+    text-indent: -9px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
 }
 
@@ -146,6 +147,10 @@ main .language_buttons:hover{
         flex-basis: 100%;
     }
 }
+
+
+
+
 
 *{
     max-width: 100%;

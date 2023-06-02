@@ -1,33 +1,11 @@
-
 main {
     flex-direction: column;
     padding: 0;
 }
-/*
-.main :nth-child(1) { order: 2; }
-.main :nth-child(2) { order: 1; }
-*/
 
 .reseaux {
     margin-left: 80%;
 }
-/*
-.retex1 {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-.retex1 h1 {
-    text-decoration: underline;
-}
-
-.retex1 a {
-    color: white;
-}
-*/
 
 /** CAROUSEL **/
 
@@ -79,8 +57,6 @@ main {
 body {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 1.25rem;
-    font-family: 'Lato', sans-serif;
 }
 
 * {
@@ -139,20 +115,6 @@ ol, li {
     counter-increment: item;
 }
 
-.carousel__slide:nth-child(even) {
-    background-color: #99f;
-}
-
-.carousel__slide:before {
-    content: counter(item);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-40%,70px);
-    color: #fff;
-    font-size: 2em;
-}
-
 .carousel__snapper {
     position: absolute;
     top: 0;
@@ -160,6 +122,18 @@ ol, li {
     width: 100%;
     height: 100%;
     scroll-snap-align: center;
+}
+
+.carousel__snapper .PDF{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.PDF:hover{
+    color: pink;
 }
 
 @media (hover: hover) {
@@ -201,14 +175,18 @@ ol, li {
 
 .carousel__navigation-button {
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: #333;
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
     font-size: 0;
     transition: transform 0.1s;
+}
+
+.carousel__navigation-button:hover {
+    background-color: pink;
 }
 
 .carousel::before,
@@ -259,4 +237,15 @@ ol, li {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
   
+.all_retex {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-style: italic;
+    color:white;
 
+}
+
+.all_retex:hover {
+    color: pink;
+}
