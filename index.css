@@ -9,6 +9,8 @@
     justify-content: start;
     align-items: center;
     flex-wrap: nowrap;  
+    margin-bottom: 7%;
+    margin-top: 10%;
 }
 
 .Présentation h2 {
@@ -23,6 +25,7 @@
 .column-elements {
     width: 100%;
 }
+
 .column-elements p span{
     color: rgb(255, 134, 255);
     font-style: bold;
@@ -44,10 +47,9 @@
 .Formation{
     width: 100%;
     display: flex;
-    justify-content: end;
-    align-items: center;
     flex-wrap: nowrap;
-
+    margin-left: 60%;
+    margin-bottom: 10%;
 }
 
 .Formation h2 {
@@ -68,10 +70,7 @@
 .Temps_libre{
     width: 100%;
     display: flex;
-    justify-content: start;
-    align-items: center;
     flex-wrap: nowrap;
-    
 }
 
 .Temps_libre h2 {
@@ -81,11 +80,15 @@
 .Temps_libre p{
     width: 70%;
 }
+.Temps_libre a {
+    color: rgb(255, 134, 255);
+}
 
 .Temps_libre img{
-    height: 90%;
+    height: 60%;
     width: 50%; 
     margin-bottom: 10%;
+    border-radius: 10px;
 }
 
 /* -------------------- Footer -------------------- */

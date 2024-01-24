@@ -28,10 +28,14 @@ header {
 }
 
 /* ----- Menu_accueil ----- */
+.menu_accueil {
+    width: 100%;
+    position: relative;
+}
+
 .menu_accueil ul {
     position: relative;
     gap: 30px;
-    width: 100em;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -46,7 +50,7 @@ header {
 .menu_accueil ul li a {
     position: relative;
     text-decoration: none;
-    line-height: 2em;
+    line-height: 1.5em;
     letter-spacing: 1px;
     color: transparent;
     text-indent: -9px;
@@ -107,6 +111,7 @@ main .language_buttons:hover{
 .reseaux {
     font-size: 3em;
     height: 20%;
+    margin-left: 20%;
 }
 
 .reseaux a {
